@@ -1,6 +1,6 @@
 {
   "name": "chatbot-ai-js",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "Modern JavaScript library for building intelligent chatbots with on-device NLU and Nvidia AI integration. Now with fully functional WhatsApp and Telegram adapters!",
   "main": "src/index.js",
   "type": "module",
