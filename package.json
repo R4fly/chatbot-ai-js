@@ -1,0 +1,53 @@
+{
+  "name": "chatbot-ai-js",
+  "version": "2.0.1",
+  "description": "Modern JavaScript library for building intelligent chatbots with on-device NLU and Nvidia AI integration (MiniMax, Llama, etc.)",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test/test.js",
+    "start": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/R4fly/chatbot-ai-js.git"
+  },
+  "homepage": "https://github.com/R4fly/chatbot-ai-js#readme",
+  "bugs": {
+    "url": "https://github.com/R4fly/chatbot-ai-js/issues"
+  },
+  "keywords": [
+    "chatbot",
+    "ai",
+    "nlp",
+    "natural-language-processing",
+    "nvidia",
+    "minimax",
+    "llama",
+    "whatsapp-bot",
+    "telegram-bot",
+    "conversational-ai",
+    "intent-classification",
+    "nodejs"
+  ],
+  "author": "Muhammad Rafly Baehaqi <muhammadraflybaehaqi@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc13",
+    "axios": "^1.18.1",
+    "glob": "^13.0.6",
+    "natural": "^8.1.1",
+    "node-telegram-bot-api": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^10.6.0"
+  }
+}

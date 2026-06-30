@@ -1,0 +1,26 @@
+# Force Unix line endings (LF) for all text files
+# This ensures consistency across Windows, Mac, and Linux
+
+* text=auto eol=lf
+
+# Explicitly mark file types
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Binary files should not be converted
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
