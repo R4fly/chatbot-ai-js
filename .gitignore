@@ -65,3 +65,9 @@ out/
 *.tgz
 .npm
 .eslintcache
+# ============================================
+# WHATSAPP AUTH STATE
+# ============================================
+whatsapp-auth/
+*.auth
+auth-state.json

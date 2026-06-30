@@ -45,6 +45,40 @@ const response = await bot.processMessage('Siapa presiden Indonesia?');
 console.log(response.text); // Dijawab oleh Nvidia MiniMax-M3
 ```
 
+## 📱 Multi-Channel Adapters
+
+Library ini mendukung integrasi dengan WhatsApp dan Telegram secara native.
+
+### 📱 WhatsApp Adapter (Baileys)
+
+WhatsApp adapter menggunakan library [Baileys](https://github.com/WhiskeySockets/Baileys) yang merupakan implementasi WhatsApp Web API.
+
+#### Cara Penggunaan:
+
+```javascript
+import { ChatbotAI } from 'chatbot-ai-js';
+
+const bot = new ChatbotAI({
+  backendConfig: {
+    apiKey: process.env.NVIDIA_API_KEY,
+    model: 'minimaxai/minimax-m3'
+  }
+});
+
+// Tambahkan intent dan handler
+bot.addIntent('salam', ['Halo', 'Selamat pagi']);
+bot.onIntent('salam', async (ctx) => ({
+  text: 'Halo! Ada yang bisa saya bantu?'
+}));
+
+// Hubungkan ke WhatsApp
+await bot.connectAdapter('whatsapp', {
+  authFolder: './whatsapp-auth' // Folder untuk menyimpan session
+});
+
+await bot.start();
+```
+
 ## 🔑 Mendapatkan API Key Nvidia
 1. Kunjungi https://build.nvidia.com
 2. Daftar dan buat API key gratis
