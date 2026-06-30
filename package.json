@@ -1,6 +1,6 @@
 {
   "name": "chatbot-ai-js",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Modern JavaScript library for building intelligent chatbots with on-device NLU and Nvidia AI integration (MiniMax, Llama, etc.)",
   "main": "src/index.js",
   "type": "module",
